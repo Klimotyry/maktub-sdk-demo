@@ -35,6 +35,15 @@ jobs:
           echo "66c67a07816a35e5f6cb045a027c8ad7a8c702cfbbc8a307e1af7d2e833c355f  /tmp/maktub-sdk-browser-v8.0.150.tgz" | sha256sum -c -
           tar -xzf /tmp/maktub-sdk-browser-v8.0.150.tgz -C _site
 
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Build Open Stake test demo
+        shell: bash
+        run: bash scripts/build-open-stake.sh
+
       - name: Configure Pages
         uses: actions/configure-pages@v5
 
