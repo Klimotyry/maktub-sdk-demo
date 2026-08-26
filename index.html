@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0b0910" />
+    <meta
+      name="description"
+      content="Maktub SDK 8.0.150 — автономный стенд для тестирования игр на виртуальном балансе."
+    />
+    <title>Maktub SDK Demo</title>
+    <link rel="stylesheet" href="./app.css" />
+    <script defer src="./sdk/dist/vanilla.global.js"></script>
+    <script defer src="./app.js"></script>
+  </head>
+  <body>
+    <div class="ambient ambient-one"></div>
+    <div class="ambient ambient-two"></div>
+
+    <header class="topbar">
+      <a class="brand" href="./" aria-label="Maktub SDK Demo">
+        <span class="brand-mark">M</span>
+        <span>
+          <strong>MAKTUB</strong>
+          <small>SDK 8.0.150</small>
+        </span>
+      </a>
+
+      <div class="topbar-actions">
+        <span class="demo-pill"><i></i> DEMO</span>
+        <div class="balance-card" aria-live="polite">
+          <span>Тестовый баланс</span>
+          <strong id="balance">10 000.00 BC</strong>
+        </div>
+        <button class="icon-button" id="reset-balance" type="button" title="Вернуть 10 000 BC" aria-label="Сбросить баланс">
+          ↻
+        </button>
+      </div>
+    </header>
+
+    <main class="shell">
+      <section class="hero">
+        <div>
+          <p class="eyebrow">PLAYGROUND · VIRTUAL COINS ONLY</p>
+          <h1>Тестируй механику.<br /><span>Не рискуй деньгами.</span></h1>
+          <p class="hero-copy">
+            Автономный demo mode из официального Maktub SDK. Выбирай игру,
+            меняй ставку и проверяй выплату на виртуальных BC.
+          </p>
+        </div>
+
+        <div class="game-picker">
+          <label for="game-select">Выбрать игру</label>
+          <div class="select-wrap">
+            <select id="game-select" aria-label="Выбрать игру"></select>
+            <span>⌄</span>
+          </div>
+          <div class="quick-games" aria-label="Популярные игры">
+            <button type="button" data-game="dice">Dice</button>
+            <button type="button" data-game="mines">Mines</button>
+            <button type="button" data-game="plinko">Plinko</button>
+            <button type="button" data-game="roulette">Roulette</button>
+            <button type="button" data-game="crash">Crash</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="game-card">
+        <div class="game-card-head">
+          <div>
+            <span class="status-dot"></span>
+            <span id="game-status">DEMO READY</span>
+          </div>
+          <h2 id="game-title">Dice</h2>
+          <span class="fake-currency">BC · VIRTUAL</span>
+        </div>
+
+        <div id="game-root" aria-label="Игровая область Maktub SDK">
+          <div class="loading">
+            <span></span>
+            <p>Загружаю SDK…</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="notes">
+        <div>
+          <span>01</span>
+          <p><strong>Баланс сохраняется</strong>После перезагрузки можно продолжить тест.</p>
+        </div>
+        <div>
+          <span>02</span>
+          <p><strong>Ставки локальные</strong>Токен, аккаунт и платёжный сервер не используются.</p>
+        </div>
+        <div>
+          <span>03</span>
+          <p><strong>Быстрый сброс</strong>Кнопка ↻ возвращает исходные 10 000 BC.</p>
+        </div>
+      </section>
+    </main>
+
+    <div id="toast" role="status" aria-live="polite"></div>
+
+    <footer>
+      <span>Maktub SDK Demo</span>
+      <span>Только виртуальные монеты · Без реальных платежей</span>
+    </footer>
+  </body>
+</html>

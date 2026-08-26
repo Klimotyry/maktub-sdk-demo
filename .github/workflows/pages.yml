@@ -1,0 +1,48 @@
+name: Deploy Maktub SDK Demo to Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+
+      - name: Rebuild browser SDK
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p _site/sdk
+          cp index.html app.css app.js .nojekyll _site/
+          cp sdk/README.md sdk/package.json _site/sdk/
+          cat vendor/maktub-sdk-browser-v8.0.150.tgz.part-* > /tmp/maktub-sdk-browser-v8.0.150.tgz
+          echo "66c67a07816a35e5f6cb045a027c8ad7a8c702cfbbc8a307e1af7d2e833c355f  /tmp/maktub-sdk-browser-v8.0.150.tgz" | sha256sum -c -
+          tar -xzf /tmp/maktub-sdk-browser-v8.0.150.tgz -C _site
+
+      - name: Configure Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload static site
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: _site
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

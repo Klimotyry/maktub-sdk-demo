@@ -1,0 +1,269 @@
+{
+  "name": "@maktubbet/sdk",
+  "version": "8.0.150",
+  "private": false,
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    },
+    "./dice": {
+      "types": "./dist/dice/index.d.ts",
+      "import": "./dist/dice/index.js",
+      "require": "./dist/dice/index.cjs"
+    },
+    "./keno": {
+      "types": "./dist/keno/index.d.ts",
+      "import": "./dist/keno/index.js",
+      "require": "./dist/keno/index.cjs"
+    },
+    "./plinko": {
+      "types": "./dist/plinko/index.d.ts",
+      "import": "./dist/plinko/index.js",
+      "require": "./dist/plinko/index.cjs"
+    },
+    "./limbo": {
+      "types": "./dist/limbo/index.d.ts",
+      "import": "./dist/limbo/index.js",
+      "require": "./dist/limbo/index.cjs"
+    },
+    "./mines": {
+      "types": "./dist/mines/index.d.ts",
+      "import": "./dist/mines/index.js",
+      "require": "./dist/mines/index.cjs"
+    },
+    "./roulette": {
+      "types": "./dist/roulette/index.d.ts",
+      "import": "./dist/roulette/index.js",
+      "require": "./dist/roulette/index.cjs"
+    },
+    "./wheel": {
+      "types": "./dist/wheel/index.d.ts",
+      "import": "./dist/wheel/index.js",
+      "require": "./dist/wheel/index.cjs"
+    },
+    "./coinflip": {
+      "types": "./dist/coinflip/index.d.ts",
+      "import": "./dist/coinflip/index.js",
+      "require": "./dist/coinflip/index.cjs"
+    },
+    "./blackjack": {
+      "types": "./dist/blackjack/index.d.ts",
+      "import": "./dist/blackjack/index.js",
+      "require": "./dist/blackjack/index.cjs"
+    },
+    "./hilo": {
+      "types": "./dist/hilo/index.d.ts",
+      "import": "./dist/hilo/index.js",
+      "require": "./dist/hilo/index.cjs"
+    },
+    "./tower": {
+      "types": "./dist/tower/index.d.ts",
+      "import": "./dist/tower/index.js",
+      "require": "./dist/tower/index.cjs"
+    },
+    "./soccer": {
+      "types": "./dist/soccer/index.d.ts",
+      "import": "./dist/soccer/index.js",
+      "require": "./dist/soccer/index.cjs"
+    },
+    "./doors": {
+      "types": "./dist/doors/index.d.ts",
+      "import": "./dist/doors/index.js",
+      "require": "./dist/doors/index.cjs"
+    },
+    "./baccarat": {
+      "types": "./dist/baccarat/index.d.ts",
+      "import": "./dist/baccarat/index.js",
+      "require": "./dist/baccarat/index.cjs"
+    },
+    "./diamonds": {
+      "types": "./dist/diamonds/index.d.ts",
+      "import": "./dist/diamonds/index.js",
+      "require": "./dist/diamonds/index.cjs"
+    },
+    "./chicken": {
+      "types": "./dist/chicken/index.d.ts",
+      "import": "./dist/chicken/index.js",
+      "require": "./dist/chicken/index.cjs"
+    },
+    "./crash": {
+      "types": "./dist/crash/index.d.ts",
+      "import": "./dist/crash/index.js",
+      "require": "./dist/crash/index.cjs"
+    },
+    "./slide": {
+      "types": "./dist/slide/index.d.ts",
+      "import": "./dist/slide/index.js",
+      "require": "./dist/slide/index.cjs"
+    },
+    "./videopoker": {
+      "types": "./dist/videopoker/index.d.ts",
+      "import": "./dist/videopoker/index.js",
+      "require": "./dist/videopoker/index.cjs"
+    },
+    "./balloon": {
+      "types": "./dist/balloon/index.d.ts",
+      "import": "./dist/balloon/index.js",
+      "require": "./dist/balloon/index.cjs"
+    },
+    "./phoenix": {
+      "types": "./dist/phoenix/index.d.ts",
+      "import": "./dist/phoenix/index.js",
+      "require": "./dist/phoenix/index.cjs"
+    },
+    "./realestate": {
+      "types": "./dist/realestate/index.d.ts",
+      "import": "./dist/realestate/index.js",
+      "require": "./dist/realestate/index.cjs"
+    },
+    "./stairs": {
+      "types": "./dist/stairs/index.d.ts",
+      "import": "./dist/stairs/index.js",
+      "require": "./dist/stairs/index.cjs"
+    },
+    "./bridge": {
+      "types": "./dist/bridge/index.d.ts",
+      "import": "./dist/bridge/index.js",
+      "require": "./dist/bridge/index.cjs"
+    },
+    "./double": {
+      "types": "./dist/double/index.d.ts",
+      "import": "./dist/double/index.js",
+      "require": "./dist/double/index.cjs"
+    },
+    "./volt": {
+      "types": "./dist/volt/index.d.ts",
+      "import": "./dist/volt/index.js",
+      "require": "./dist/volt/index.cjs"
+    },
+    "./drop": {
+      "types": "./dist/drop/index.d.ts",
+      "import": "./dist/drop/index.js",
+      "require": "./dist/drop/index.cjs"
+    },
+    "./defuse": {
+      "types": "./dist/defuse/index.d.ts",
+      "import": "./dist/defuse/index.js",
+      "require": "./dist/defuse/index.cjs"
+    },
+    "./spark": {
+      "types": "./dist/spark/index.d.ts",
+      "import": "./dist/spark/index.js",
+      "require": "./dist/spark/index.cjs"
+    },
+    "./safe": {
+      "types": "./dist/safe/index.d.ts",
+      "import": "./dist/safe/index.js",
+      "require": "./dist/safe/index.cjs"
+    },
+    "./futures": {
+      "types": "./dist/futures/index.d.ts",
+      "import": "./dist/futures/index.js",
+      "require": "./dist/futures/index.cjs"
+    },
+    "./pulse": {
+      "types": "./dist/pulse/index.d.ts",
+      "import": "./dist/pulse/index.js",
+      "require": "./dist/pulse/index.cjs"
+    },
+    "./launch": {
+      "types": "./dist/launch/index.d.ts",
+      "import": "./dist/launch/index.js",
+      "require": "./dist/launch/index.cjs"
+    },
+    "./wire": {
+      "types": "./dist/wire/index.d.ts",
+      "import": "./dist/wire/index.js",
+      "require": "./dist/wire/index.cjs"
+    },
+    "./vanilla": {
+      "import": "./dist/vanilla.js"
+    },
+    "./vanilla.global.js": "./dist/vanilla.global.js",
+    "./dice/styles.css": "./dist/dice/styles.css",
+    "./keno/styles.css": "./dist/keno/styles.css",
+    "./plinko/styles.css": "./dist/plinko/styles.css",
+    "./limbo/styles.css": "./dist/limbo/styles.css",
+    "./mines/styles.css": "./dist/mines/styles.css",
+    "./roulette/styles.css": "./dist/roulette/styles.css",
+    "./wheel/styles.css": "./dist/wheel/styles.css",
+    "./coinflip/styles.css": "./dist/coinflip/styles.css",
+    "./blackjack/styles.css": "./dist/blackjack/styles.css",
+    "./hilo/styles.css": "./dist/hilo/styles.css",
+    "./tower/styles.css": "./dist/tower/styles.css",
+    "./soccer/styles.css": "./dist/soccer/styles.css",
+    "./doors/styles.css": "./dist/doors/styles.css",
+    "./baccarat/styles.css": "./dist/baccarat/styles.css",
+    "./diamonds/styles.css": "./dist/diamonds/styles.css",
+    "./chicken/styles.css": "./dist/chicken/styles.css",
+    "./crash/styles.css": "./dist/crash/styles.css",
+    "./slide/styles.css": "./dist/slide/styles.css",
+    "./videopoker/styles.css": "./dist/videopoker/styles.css",
+    "./balloon/styles.css": "./dist/balloon/styles.css",
+    "./phoenix/styles.css": "./dist/phoenix/styles.css",
+    "./realestate/styles.css": "./dist/realestate/styles.css",
+    "./stairs/styles.css": "./dist/stairs/styles.css",
+    "./bridge/styles.css": "./dist/bridge/styles.css",
+    "./double/styles.css": "./dist/double/styles.css",
+    "./volt/styles.css": "./dist/volt/styles.css",
+    "./drop/styles.css": "./dist/drop/styles.css",
+    "./defuse/styles.css": "./dist/defuse/styles.css",
+    "./spark/styles.css": "./dist/spark/styles.css",
+    "./safe/styles.css": "./dist/safe/styles.css",
+    "./pulse/styles.css": "./dist/pulse/styles.css",
+    "./futures/styles.css": "./dist/futures/styles.css",
+    "./launch/styles.css": "./dist/launch/styles.css",
+    "./wire/styles.css": "./dist/wire/styles.css",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "prepare": "panda codegen && panda cssgen --outfile styled-system/styles.css",
+    "tsup": "tsup",
+    "test": "vitest run --config vitest.config.ts",
+    "build": "panda codegen && panda cssgen --outfile styled-system/styles.css && node scripts/generate-css-module.cjs && NODE_OPTIONS=${NODE_OPTIONS:---max-old-space-size=8192} npx tsup && if [ \"${SDK_STAGING_DTS:-0}\" = \"1\" ]; then tsc -p tsconfig.staging-dts.json; fi",
+    "dev": "tsup --watch",
+    "test:wallet-lifecycle": "bun test src/shared/api/idempotency.test.ts src/shared/api/ws-ticket.test.ts src/shared/realtime-active-intent.test.ts src/shared/realtime-protocol.test.ts src/shared/realtime-reconnect-delay.test.ts"
+  },
+  "dependencies": {
+    "@ark-ui/anatomy": "^3.5.0",
+    "@ark-ui/react": "^4.0.0",
+    "@floating-ui/react": "^0.26.0",
+    "axios": "^1.7.0",
+    "socket.io-client": "^4.5.1",
+    "clsx": "^2.1.0",
+    "events": "^3.3.0",
+    "howler": "^2.2.4",
+    "immer": "^11.1.3",
+    "merge-refs": "^1.3.0",
+    "react-number-format": "^5.4.0",
+    "react-transition-group": "^4.4.5",
+    "use-sound": "^5.0.0",
+    "zustand": "^4.5.0"
+  },
+  "peerDependencies": {
+    "react": ">=18",
+    "react-dom": ">=18"
+  },
+  "devDependencies": {
+    "@pandacss/dev": "^0.33.0",
+    "@types/howler": "^2.2.0",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "jsdom": "^29.1.1",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "sass": "^1.70.0",
+    "tsup": "^8.0.0",
+    "typescript": "npm:@typescript/typescript6@^6.0.2",
+    "vitest": "^3.2.4"
+  }
+}
